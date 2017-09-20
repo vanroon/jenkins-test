@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('one'){
 			steps{
-				echo "oi"
+				echo "${currentBuild.number}"
 			}
 		}
 	}
