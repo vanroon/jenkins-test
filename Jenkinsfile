@@ -14,7 +14,7 @@ pipeline{
 				branch 'branchy' 
 			}
 			steps{
-				echo "hello branchy"
+				echo "hello branchy!"
 			}
 		}
 	}
