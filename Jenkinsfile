@@ -7,6 +7,7 @@ pipeline{
 			}
 			steps{
 				echo "hello master"
+				input message: 'go on', ok: 'yeah', submitter: 'evroon'
 			}
 		}
 		stage('one branchy'){
