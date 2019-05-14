@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('one'){
 			steps{
-				echo "${currentBuild.number}"
+				echo "I am a NOT a master branch"
 			}
 		}
 	}
