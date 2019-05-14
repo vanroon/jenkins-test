@@ -1,9 +1,20 @@
 pipeline{
 	agent any
 	stages{
-		stage('one'){
+		stage('one master'){
+			when {
+				branch 'master' 
+			}
 			steps{
-				echo "oi"
+				echo "hello master"
+			}
+		}
+		stage('one branchy'){
+			when {
+				branch 'branchy' 
+			}
+			steps{
+				echo "hello branchy"
 			}
 		}
 	}
